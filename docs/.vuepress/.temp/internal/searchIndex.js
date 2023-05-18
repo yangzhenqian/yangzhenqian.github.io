@@ -205,13 +205,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "关于我",
-    "headers": [],
-    "path": "/my/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "this 的理解",
     "headers": [
       {
@@ -696,6 +689,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "关于我",
+    "headers": [],
+    "path": "/my/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "前言",
     "headers": [],
     "path": "/node/node.html",
@@ -966,6 +966,32 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "前端路由",
+    "headers": [
+      {
+        "level": 3,
+        "title": "vue-router",
+        "slug": "vue-router",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "react-router",
+        "slug": "react-router",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "服务器配置 history 模式示例",
+        "slug": "服务器配置-history-模式示例",
+        "children": []
+      }
+    ],
+    "path": "/router/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "前言",
     "headers": [],
     "path": "/threejs/three.html",
@@ -1048,32 +1074,6 @@ export const searchIndex = [
       }
     ],
     "path": "/vite/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "前端路由",
-    "headers": [
-      {
-        "level": 3,
-        "title": "vue-router",
-        "slug": "vue-router",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "react-router",
-        "slug": "react-router",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "服务器配置 history 模式示例",
-        "slug": "服务器配置-history-模式示例",
-        "children": []
-      }
-    ],
-    "path": "/router/",
     "pathLocale": "/",
     "extraFields": []
   },

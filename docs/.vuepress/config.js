@@ -70,11 +70,11 @@ module.exports = {
       },
       {
         text: 'threejs',
-        children: ['/electron/three.md'],
+        children: ['/threejs/three.md'],
       },
       {
         text: 'git',
-        children: ['/electron/git.md'],
+        children: ['/git/git.md'],
       },
     ],
   },

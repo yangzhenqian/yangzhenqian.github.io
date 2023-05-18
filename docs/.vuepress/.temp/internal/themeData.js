@@ -80,13 +80,13 @@ export const themeData = {
     {
       "text": "threejs",
       "children": [
-        "/electron/three.md"
+        "/threejs/three.md"
       ]
     },
     {
       "text": "git",
       "children": [
-        "/electron/git.md"
+        "/git/git.md"
       ]
     }
   ],
