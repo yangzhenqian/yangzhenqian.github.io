@@ -23,6 +23,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
 
-git push -f git@github.com:yangzhenqian/yangzhenqian.github.io.git main
+git push -f git@github.com:yangzhenqian/yangzhenqian.github.io.git master:dev
 
 cd -

@@ -1,7 +1,7 @@
 export const siteData = {
   "base": "/",
   "lang": "zh-CN",
-  "title": "xuhairui's blog",
+  "title": "yangzhenqian",
   "description": "hello",
   "head": [],
   "locales": {}

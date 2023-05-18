@@ -70,6 +70,24 @@ export const themeData = {
         "/engineering/babel.md",
         "/engineering/multirepo&monorepo.md"
       ]
+    },
+    {
+      "text": "electron",
+      "children": [
+        "/electron/electron.md"
+      ]
+    },
+    {
+      "text": "threejs",
+      "children": [
+        "/electron/three.md"
+      ]
+    },
+    {
+      "text": "git",
+      "children": [
+        "/electron/git.md"
+      ]
     }
   ],
   "locales": {

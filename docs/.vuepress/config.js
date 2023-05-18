@@ -1,7 +1,7 @@
 const path = require('path');
 module.exports = {
   lang: 'zh-CN',
-  title: `xuhairui's blog`,
+  title: `yangzhenqian`,
   description: 'hello',
   configureWebpack: {
     resolve: {
@@ -63,6 +63,18 @@ module.exports = {
       {
         text: '工程化',
         children: ['/engineering/webpack.md', '/engineering/babel.md', '/engineering/multirepo&monorepo.md'],
+      },
+      {
+        text: 'electron',
+        children: ['/electron/electron.md'],
+      },
+      {
+        text: 'threejs',
+        children: ['/electron/three.md'],
+      },
+      {
+        text: 'git',
+        children: ['/electron/git.md'],
       },
     ],
   },
