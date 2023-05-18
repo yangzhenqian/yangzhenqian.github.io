@@ -7,6 +7,16 @@ export const pagesData = {
   "v-efacb1d8": () => import(/* webpackChunkName: "v-efacb1d8" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/engineering/multirepo&monorepo.html.js").then(({ data }) => data),
   // path: /engineering/webpack.html
   "v-5e4a8b01": () => import(/* webpackChunkName: "v-5e4a8b01" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/engineering/webpack.html.js").then(({ data }) => data),
+  // path: /my/
+  "v-2d0aa66a": () => import(/* webpackChunkName: "v-2d0aa66a" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/my/index.html.js").then(({ data }) => data),
+  // path: /node/node.html
+  "v-62c92783": () => import(/* webpackChunkName: "v-62c92783" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/node/node.html.js").then(({ data }) => data),
+  // path: /react/hooks.html
+  "v-2e4c22b2": () => import(/* webpackChunkName: "v-2e4c22b2" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/react/hooks.html.js").then(({ data }) => data),
+  // path: /react/
+  "v-dc3b2a6e": () => import(/* webpackChunkName: "v-dc3b2a6e" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/react/index.html.js").then(({ data }) => data),
+  // path: /react/react.html
+  "v-ca9e7b7a": () => import(/* webpackChunkName: "v-ca9e7b7a" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/react/react.html.js").then(({ data }) => data),
   // path: /js-advanced/this.html
   "v-685144f9": () => import(/* webpackChunkName: "v-685144f9" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/js-advanced/this.html.js").then(({ data }) => data),
   // path: /js-advanced/%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.html
@@ -23,18 +33,8 @@ export const pagesData = {
   "v-047abd9f": () => import(/* webpackChunkName: "v-047abd9f" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/js-advanced/浏览器缓存.html.js").then(({ data }) => data),
   // path: /js-advanced/%E7%BB%A7%E6%89%BF.html
   "v-ad1b6aaa": () => import(/* webpackChunkName: "v-ad1b6aaa" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/js-advanced/继承.html.js").then(({ data }) => data),
-  // path: /node/node.html
-  "v-62c92783": () => import(/* webpackChunkName: "v-62c92783" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/node/node.html.js").then(({ data }) => data),
-  // path: /react/hooks.html
-  "v-2e4c22b2": () => import(/* webpackChunkName: "v-2e4c22b2" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/react/hooks.html.js").then(({ data }) => data),
-  // path: /react/
-  "v-dc3b2a6e": () => import(/* webpackChunkName: "v-dc3b2a6e" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/react/index.html.js").then(({ data }) => data),
-  // path: /react/react.html
-  "v-ca9e7b7a": () => import(/* webpackChunkName: "v-ca9e7b7a" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/react/react.html.js").then(({ data }) => data),
   // path: /router/
   "v-86c67626": () => import(/* webpackChunkName: "v-86c67626" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/router/index.html.js").then(({ data }) => data),
-  // path: /my/
-  "v-2d0aa66a": () => import(/* webpackChunkName: "v-2d0aa66a" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/my/index.html.js").then(({ data }) => data),
   // path: /vite/debug.html
   "v-2d4e1e50": () => import(/* webpackChunkName: "v-2d4e1e50" */"D:/myproject/yangzhenqian.github.io/docs/.vuepress/.temp/pages/vite/debug.html.js").then(({ data }) => data),
   // path: /vite/
