@@ -137,12 +137,12 @@ export const data = {
   ],
   "filePathRelative": "react/hooks.md",
   "git": {
-    "updatedTime": 1663077257000,
+    "updatedTime": 1684392364000,
     "contributors": [
       {
-        "name": "xuhairui",
-        "email": "cgxuhairui@163.com",
-        "commits": 2
+        "name": "yangzhenqian",
+        "email": "zhenqian.yang@i-tage.com",
+        "commits": 1
       }
     ]
   }

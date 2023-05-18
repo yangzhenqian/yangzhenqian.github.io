@@ -21,11 +21,11 @@ export const data = {
   ],
   "filePathRelative": "js-advanced/浏览器缓存.md",
   "git": {
-    "updatedTime": 1663076909000,
+    "updatedTime": 1684392364000,
     "contributors": [
       {
-        "name": "xuhairui",
-        "email": "cgxuhairui@163.com",
+        "name": "yangzhenqian",
+        "email": "zhenqian.yang@i-tage.com",
         "commits": 1
       }
     ]

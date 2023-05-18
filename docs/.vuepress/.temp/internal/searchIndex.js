@@ -675,35 +675,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前端路由",
-    "headers": [
-      {
-        "level": 3,
-        "title": "vue-router",
-        "slug": "vue-router",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "react-router",
-        "slug": "react-router",
-        "children": []
-      },
-      {
-        "level": 3,
-        "title": "服务器配置 history 模式示例",
-        "slug": "服务器配置-history-模式示例",
-        "children": []
-      }
-    ],
-    "path": "/router/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "关于我",
+    "title": "前言",
     "headers": [],
-    "path": "/my/",
+    "path": "/node/node.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -971,9 +945,35 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前言",
+    "title": "前端路由",
+    "headers": [
+      {
+        "level": 3,
+        "title": "vue-router",
+        "slug": "vue-router",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "react-router",
+        "slug": "react-router",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "服务器配置 history 模式示例",
+        "slug": "服务器配置-history-模式示例",
+        "children": []
+      }
+    ],
+    "path": "/router/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "关于我",
     "headers": [],
-    "path": "/node/node.html",
+    "path": "/my/",
     "pathLocale": "/",
     "extraFields": []
   },
