@@ -1,0 +1,1 @@
+const e={key:"v-1f0bf9e4",path:"/engineering/babel.html",title:"babel",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"1 \u4ECB\u7ECD",slug:"_1-\u4ECB\u7ECD",children:[]},{level:2,title:"2 \u4F7F\u7528",slug:"_2-\u4F7F\u7528",children:[]}],git:{updatedTime:null,contributors:[]},filePathRelative:"engineering/babel.md"};export{e as data};
