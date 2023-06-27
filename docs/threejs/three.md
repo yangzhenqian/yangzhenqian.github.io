@@ -180,7 +180,7 @@ BufferAttribute 这个类是用于储存bufferGeometry相关的attribute（坐�
     geometry.vertices.push(end);
 ```
 
-### 材质
+### 材质 Material
 
 
 
