@@ -1,10 +1,15 @@
 # git
 
+### hash
+通过git log 查看提交记录的hash值（只取前7位就可以）
+git log --graph  查看log结构图
+![](../../images/git/1.png)
+
 ## git stash 暂存代码
 在已经开发了一部分代码，发现分支存在问题需要回退到之前的版本，此时不想删除已开发的代码并回退到之前的版本
 
 ### 暂存常用命令
-```md
+```js
 git stash || git stash -m "暂存说明" || git stash save "暂存说明" //暂存文件
 git stash list // 查看暂存列表
 git stash pop stash@{0} //恢复暂存列表第一个暂存项，并删除暂存记录
@@ -12,6 +17,8 @@ git stash apply stash@{0} //恢复暂存列表第一个暂存项，并保存暂�
 git stash push text.txt main.js //只缓存部分文件 多个文件用空格分隔
 git stash show stash@{0}  //查看某次暂存修改文件
 git stash show -p stash@{0} //查看某次暂存所有的文件
+git stash drop stash@{0} //删除某条暂存
+git stash clear // 删除所有暂存
 ```
 
 ## git 生命周期钩子函数
@@ -96,3 +103,129 @@ pre-receive 与 update不同点，同时触发多个推送，pre-receive只执�
 #### post-receive
 
 提交代码合入主仓库成功后触发，主要用于消息通知，发送邮件，重新编译等操作；
+
+## git cherry-pick 部分commit提交
+
+当需要合并其他分支代码，可以直接使用merge，但如果不想全部合并，只想合并他的某几个commit提交，可以使用cherry-pick进行commit合并
+
+merge合并最小单位是分支， cherry-pick 最小单位是commit记录
+
+```js
+// 以下branch1为待合并的分支，branch2为要进行合并的分支
+git checkout branch1  //切换为branch1
+git log // 查看提交记录，并找到自己需要合并的commit记录 Hash值
+
+git checkout branch2 //切换为branch2
+git cherry-pick hash //将branch1单个hash合并到branch2
+
+//一次合并多个commit提交,中间用空格间隔
+git cherry-pick hash1 hash2
+
+//进行连续一段commit记录进行合并,下面的命令从hash1到hash2的（左开右闭，不包含hash1）所有提交。
+//必须按照先后顺序，否则会失败，但不会报错
+git cherry-pick hash1..hash2
+//如果想要包含hash1,则增加^号，或选择他前一个hash值
+git cherry-pick hash1^..hash2
+
+```
+
+git cherry-pick 常用配置项
+- -e: 打开编辑器
+- -n: 只更新工作区&暂存区，不产生新的提交记录
+- -x: 保留原来提交信息，方便后续排查提交怎么产生的
+- -s: 追加操作者账户名，方便追查谁进行的操作
+- -m: 如果原提交是两个分支的合并，则需要传入该参数，否则会失败
+
+冲突解决与merge一致
+
+## git reset 回退版本
+
+当代码上传到暂存区，发现存在问题，需要重新修改进行提交
+
+传参hash值均为想要回退的commit的上一条hash
+#### --mixed
+```js
+// mixed 作为reset默认值，可以不传，删除commit提交记录，工作区不受影响
+// 暂存区代码回退到未add状态，可修改后再次add, commit提交
+git reset --mixed hash
+```
+
+#### --soft
+```js
+// soft删除commit提交记录，工作区不受影响
+// 暂存区代码回退到已add，未commit状态，可再次commit提交
+git reset --soft hash
+```
+
+#### --hard
+```js
+// hard删除commit提交记录，工作区 & 暂存区都会被删除
+git reset --hard hash
+```
+
+## git revert 撤销中间某次commit提交
+
+当提交了多次commit，此时想要把中间的commit内容撤销，又不影响后面的commit提交
+
+```js
+// 进行某个commit的撤销，会将该次commit提交撤销到add的状态
+git revert -n hash
+// 重新commit提交
+git commit -m 'revert hash'
+//此时暂存区已将revert的commit提交删除，并重新生成了hash
+```
+
+## git rebase 变基
+
+ merge 是将一个分支的更改合并到另一个分支中。它会创建一个新的合并提交，将两个分支的更改合并在一起。合并提交会保留每个分支的历史记录，并且可以在合并后的分支上看到合并的结果。 
+ 
+ rebase 则是将目标分支的提交作为当前分支的基线；会更改提交历史，是提交记录看起来更加线性，缺点：会导致提交记录混乱，先后顺序更改，导致后续追查问题困难；
+
+```js
+// 将目标分支的最新提交作为当前分支的基线
+git rebase 目标分支
+```
+
+### 多个commit合并
+
+当开发一个需求完毕需要合并主分支时，需求存在多个commit提交记录，为了防止过多的commit提交导致主分支记录混乱，可以先将多个commit合并为一个commit，再进行merge
+```js
+git log // 查看提交记录，选择需要合并的commit
+git rebase -i hash // -i为不需要合并的hash，hash取值为需要合并的第一个提交记录
+git rebase HEAD~n // n为前n个提交记录
+```
+##### 进入vi编辑模式
+![](../../images/git/commit_merge_vi.png)
+
+##### 找到需要合并的commit将pick修改为s || squash 将本commit合并到前一个commit
+![](../../images/git/commit_merge_vi2.png)
+
+#### 配置项及作用
+
+- pick: 保留commit
+- reword: 保留commit，但需修改message信息
+- edit： 保留commit，但需修改提交信息
+- squash: 将该commit合并到前一个commit
+- fixup: 将该commit合并到前一个commit，但不要保留该提交的注释信息
+- exec: 执行shell命令
+- drop: 删除commit
+
+#### 输入合并后的提交信息
+
+![](../../images/git/commit_message.png)
+
+#### 合并成功后的log
+
+![](../../images/git/commit_merge-result.png)
+
+#### 直接运行 git push -f，重新拉取代码会导致合并无效
+
+
+#### rebase还可修改已经提交的commit信息等其他操作
+
+#### 如果这个过程中有操作错误，可以使用 git rebase --abort来撤销修改，回到没有开始操作合并之前的状态。
+
+### git diff 查看commit更改
+```js
+git diff HEAD~3
+```
