@@ -229,3 +229,76 @@ git rebase HEAD~n // n为前n个提交记录
 ```js
 git diff HEAD~3
 ```
+
+## git 补丁
+
+当需要进行代码迁移，codereview时，可以通过生成补丁的方式，将多个commit提交打入工作区内；
+
+补丁分为 .diff文件 & .patch文件
+- .diff 文件只是记录文件改变的内容，不带有 commit 记录信息,多个 commit 可以合并成一个 diff 文件
+- .patch 文件带有记录文件改变的内容，也带有 commit 记录信息,每个 commit 对应一个 patch 文件。
+
+创建 .patch补丁
+
+```js
+
+// 创建对应hash之前的三个patch
+git format-patch hash -3
+
+// 创建某两次之间的所有patch
+git format-patch hash1..hash2
+
+```
+
+创建 .diff补丁
+
+```js
+
+// 根据id创建diff文件,多个id用空格分隔
+
+git diff hash1 hash2 > filename.diff
+
+// 创建两个提交记录之间的 diff
+
+git diff hash1..hash2
+
+```
+
+检查补丁
+
+```js
+ // 检查diff文件
+git apply --check filename.diff
+
+```
+
+使用补丁
+
+```js
+// 合入diff文件
+git apply filename.diff
+
+```
+
+### 有冲突解决方案
+
+有冲突会导致合入失败
+```js
+// 自动合入无冲突的代码，同时生成.rej文件，保存未合入的内容
+git apply --reject filename.patch
+// 根据rej文件解决冲突
+// 解决完毕进行add提交
+git add .
+
+//继续执行合入
+
+git am --countinue
+
+// 跳过冲突
+
+git am --skip
+
+// 回退
+
+git am --abort
+```
