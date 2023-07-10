@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /logo.png
-heroText: "xuhairui's blog"
+heroText: ""
 tagline: 'hello,welcome to my blog!'
 actions:
   - text: 进入 →
