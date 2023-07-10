@@ -6,5 +6,5 @@ tagline: 'hello,welcome to my blog!'
 actions:
   - text: 进入 →
     link: /my/
-footer: MIT Licensed | Copyright © 2021-present xuhairui
+footer: MIT Licensed | Copyright © 2021-present
 ---
