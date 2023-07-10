@@ -76,6 +76,10 @@ module.exports = {
         text: 'git',
         children: ['/git/git.md'],
       },
+      {
+        text: '技术网址',
+        children: ['/technicalUrl/url.md'],
+      },
     ],
   },
 };
