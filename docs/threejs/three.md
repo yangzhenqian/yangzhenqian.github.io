@@ -516,6 +516,8 @@ scene.add( light );
 
 ### 字体
 
+### 着色器
+
 ### status 状态检测器
 
 ### guis 外部操作按钮
