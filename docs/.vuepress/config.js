@@ -80,6 +80,14 @@ module.exports = {
         text: '技术网址',
         children: ['/technicalUrl/url.md'],
       },
+      {
+        text: 'chrome',
+        children: ['/chrome/plugin.md'],
+      },
+      {
+        text: 'webWorker',
+        children: ['/webWorker/webWorker.md'],
+      },
     ],
   },
 };
