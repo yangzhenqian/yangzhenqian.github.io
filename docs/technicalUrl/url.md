@@ -17,4 +17,19 @@ chimee.js 组件化H5播放器框架，支持 mp4、m3u8、flv 等多种格式�
 cyberplayer 百度官方推出的用于开发网页播放器的软件开发工具包。
 ksplayer KSPlayer是金山云的Web端视频播放器。
 [vue-bag-admin 中后台框架](https://vite.itnavs.com/admin/#/home)
- 
+
+[turn.js 仿翻书动画](http://www.turnjs.com/#samples/magazine2/9)
+
+[cpolar 内网穿透](https://dashboard.cpolar.com/get-started)
+
+[threejs赛车](https://ezshine.jnsii.com/cases/slowroads/)
+
+[推广项目](https://github.com/zwpro/coupons)
+
+[开发库](https://www.oschina.net/project)
+
+[css样式库](https://csscoco.com/inspiration/#/./3d/3d-css-galaxy-shuttle)
+
+[科大讯飞AI模型](https://xinghuo.xfyun.cn/desk)
+
+[vue3拖拽库](https://alfred-skyblue.github.io/vue-draggable-plus/demo/table/)
