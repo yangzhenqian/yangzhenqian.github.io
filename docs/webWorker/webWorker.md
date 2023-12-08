@@ -164,3 +164,4 @@ sharedWorker 在 Safari 以及移动端的兼容性不是很好
 ![](./image-2.png)
 
 
+## serviceWorker

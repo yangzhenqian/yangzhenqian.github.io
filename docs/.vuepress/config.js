@@ -88,6 +88,10 @@ module.exports = {
         text: 'webWorker',
         children: ['/webWorker/webWorker.md'],
       },
+      {
+        text: '通信',
+        children: ['/http/http.md', '/http/websocket.md', '/http/eventSource.md'],
+      },
     ],
   },
 };
