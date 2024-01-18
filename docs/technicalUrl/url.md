@@ -53,3 +53,5 @@ ksplayer KSPlayer是金山云的Web端视频播放器。
 [wechatbot](https://github.com/qingconglaixueit/wechatbot)
 
 [superset](https://github.com/apache/superset)
+
+[vue2-leaflet]
