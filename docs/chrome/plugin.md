@@ -35,9 +35,13 @@ manifest.json 文件中可以包含以下内容：
 { 
     "name":"自动登录",
     "version":"1.0", 
-    "manifest_version":3, // 它用于确定扩展程序的版本、兼容性和更新，如果版本与谷歌浏览器版本不兼容则会阻止扩展程序安装 值为 2 以上的整数
-    "content_scripts":[ { "matches":["http://*/*","https://*/*"], "js":["content.js"] } ],
-    "content_scripts": [ //它允许开发者在浏览器的网页中注入自定义的 JavaScript、CSS 和 HTML 代码。
+    /*
+    它用于确定扩展程序的版本、兼容性和更新，如果版本与谷歌
+    浏览器版本不兼容则会阻止扩展程序安装 值为 2 以上的整数
+    */
+    "manifest_version":3,
+    //它允许开发者在浏览器的网页中注入自定义的 JavaScript、CSS 和 HTML 代码。
+    "content_scripts": [ 
         {
         "matches": ["http://*/*","https://*/*"], //设置匹配地址
         "js": ["content.js"], // 引入js文件
@@ -45,7 +49,8 @@ manifest.json 文件中可以包含以下内容：
         "run_at": "document_end"
         }
     ],
-    "action":{"default_icon": "icon.png","default_popup": "popup.html"}, // 定义弹窗页面及插件图标
+    // 定义弹窗页面及插件图标
+    "action":{"default_icon": "icon.png","default_popup": "popup.html"}, 
     "background": {
         "service_worker": "background.js" //引入浏览器后台执行文件
     },
@@ -101,9 +106,11 @@ content.js 文件中可以包含以下内容：
 ```js
 // 自动登录某网址
 function autoStart() {
-    if(window.location.href.includes('9999/login') || window.location.href.includes('7000/login')) {
-        let inputClass = window.location.href.includes('9999/login') ? 'el-input__inner' : 'pristine';
-        let btnClass = window.location.href.includes('9999/login') ? 'login-button-style' : 'el-button--primary';
+  if(location.href.includes('9999/login') || location.href.includes('7000/login')){
+        let inputClass = window.location.href.includes('9999/login')
+         ? 'el-input__inner' : 'pristine';
+        let btnClass = window.location.href.includes('9999/login')
+         ? 'login-button-style' : 'el-button--primary';
         let inputList = document.querySelectorAll('input');
         let username = 'xxx';
         let password = 'xxx';
@@ -128,7 +135,8 @@ function autoStart() {
   chrome.runtime.onMessage.addListener(function (requset, sender, sendResponse) {
     // 接收到submit消息将账户密码存到本地
     if(requset.message == 'submit') {
-        localStorage.setItem('loginInfoData', JSON.stringify({user: requset.username, pass: requset.password}));
+        localStorage.setItem('loginInfoData', 
+        JSON.stringify({user: requset.username, pass: requset.password}));
     }
     // 监听url变化重新触发函数
     if(requset.message == 'update') autoStart();
@@ -194,7 +202,8 @@ document.getElementById('submit').addEventListener('click',async function() {
     if(!password) return alert('请填写密码');
     localStorage.setItem('loginInfoData', JSON.stringify({ username, password}));
     const [tab] = await chrome.tabs.query({active: true, currentWindow: true});
-    const response = await chrome.tabs.sendMessage(tab.id, {message: 'submit', username, password })
+    const response = await chrome.tabs.sendMessage(tab.id, 
+    {message: 'submit', username, password })
     window.close(); //关闭弹窗
 })
 
@@ -223,7 +232,8 @@ chrome.runtime.sendMessage({message: 'xxxx', value: 'xxxx'})
 
 // 发
 const [tab] = await chrome.tabs.query({active: true, currentWindow: true});
-const response = await chrome.tabs.sendMessage(tab.id, {message: 'submit', username, password })
+const response = await chrome.tabs.sendMessage(tab.id, 
+{message: 'submit', username, password })
 // 收
 chrome.runtime.onMessage.addListener(function (requset, sender, sendResponse) {
     if(requset.message == 'submit') {
@@ -239,7 +249,8 @@ chrome.runtime.onMessage.addListener(function (requset, sender, sendResponse) {
 chrome.runtime.onConnect.addListener()
 
 //使用chrome.extension.getBackgroundPage()
-chrome.extension.getBackgroundPage() //方法获取 background.js 的全局对象，然后可以直接访问其中的变量和函数。 
+ //方法获取 background.js 的全局对象，然后可以直接访问其中的变量和函数。
+chrome.extension.getBackgroundPage() 
 
 // popup页面打开 
  chrome.extension.getViews() //background可以使用改函数访问popup

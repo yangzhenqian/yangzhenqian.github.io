@@ -92,6 +92,10 @@ module.exports = {
         text: '通信',
         children: ['/http/http.md', '/http/websocket.md', '/http/eventSource.md'],
       },
+      {
+        text: '正则',
+        children: ['/zhengze/zhengze.md'],
+      },
     ],
   },
 };

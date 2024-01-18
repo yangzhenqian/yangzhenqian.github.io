@@ -33,3 +33,23 @@ ksplayer KSPlayer是金山云的Web端视频播放器。
 [科大讯飞AI模型](https://xinghuo.xfyun.cn/desk)
 
 [vue3拖拽库](https://alfred-skyblue.github.io/vue-draggable-plus/demo/table/)
+
+[工具库](https://web-abin.gitee.io/abin-web/tools)
+
+[page-spy-web 移动端调试方案](https://github.com/HuolalaTech/page-spy-web/blob/main/README_ZH.md)
+
+[查看npm包对项目的影响](https://bundlephobia.com/)
+
+[fabric.js 图片编辑器](https://github.com/nihaojob/vue-fabric-editor)
+
+[h5-dooring](https://github.com/MrXujiang/h5-Dooring)
+
+[aj-report](https://gitee.com/anji-plus/report)
+
+[koi-ui](https://gitee.com/BigCatHome/koi-ui)
+
+[matebase](https://github.com/metabase/metabase)
+
+[wechatbot](https://github.com/qingconglaixueit/wechatbot)
+
+[superset](https://github.com/apache/superset)
