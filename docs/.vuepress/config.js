@@ -82,7 +82,7 @@ module.exports = {
       },
       {
         text: 'chrome',
-        children: ['/chrome/plugin.md'],
+        children: ['/chrome/plugin.md', '/chrome/chromePlugin.md'],
       },
       {
         text: 'webWorker',
@@ -95,6 +95,18 @@ module.exports = {
       {
         text: '正则',
         children: ['/zhengze/zhengze.md'],
+      },
+      {
+        text: '前端代理',
+        children: ['/httpProxy/chromeProxy.md'],
+      },
+      {
+        text: '格式化代码',
+        children: ['/formatCode/husky.md'],
+      },
+      {
+        text: 'rust',
+        children: ['/rust/rust.md'],
       },
     ],
   },
