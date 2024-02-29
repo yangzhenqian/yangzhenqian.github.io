@@ -1,4 +1,5 @@
-# commit提交自动校验格式化代码
+# husky
+commit提交自动校验格式化代码
 ## 插件  eslint + prettier + husky 
 eslint安装配置自行百度
 
