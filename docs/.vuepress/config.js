@@ -108,6 +108,10 @@ module.exports = {
         text: 'rust',
         children: ['/rust/rust.md'],
       },
+      {
+        text: '开源组态库',
+        children: ['/openSource/aj-report.md', '/openSource/h5-dooring.md'],
+      },
     ],
   },
 };
