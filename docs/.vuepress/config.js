@@ -112,6 +112,10 @@ module.exports = {
         text: '开源组态库',
         children: ['/openSource/aj-report.md', '/openSource/h5-dooring.md'],
       },
+      {
+        text: 'vscode',
+        children: ['/vscode/plugins.md'],
+      },
     ],
   },
 };
