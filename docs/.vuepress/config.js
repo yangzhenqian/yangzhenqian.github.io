@@ -27,6 +27,12 @@ module.exports = {
         children: ['/my/index.md'],
       },
       {
+        text: 'css高级',
+        children: [
+          '/css/render.md',
+        ],
+      },
+      {
         text: 'js高级',
         children: [
           '/js-advanced/基础.md',
