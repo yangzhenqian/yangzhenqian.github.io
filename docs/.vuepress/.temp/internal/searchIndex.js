@@ -7,8 +7,218 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前言",
+    "title": "好用的chrome插件",
     "headers": [],
+    "path": "/chrome/chromePlugin.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "谷歌扩展程序",
+    "headers": [
+      {
+        "level": 2,
+        "title": "简介",
+        "slug": "简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "手写一个chrome插件",
+        "slug": "手写一个chrome插件",
+        "children": [
+          {
+            "level": 3,
+            "title": "基础目录",
+            "slug": "基础目录",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "文件通信",
+            "slug": "文件通信",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/chrome/plugin.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "浏览器渲染原理",
+    "headers": [
+      {
+        "level": 2,
+        "title": "渲染的本质",
+        "slug": "渲染的本质",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "渲染的时间点",
+        "slug": "渲染的时间点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "渲染流程",
+        "slug": "渲染流程",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "解析HTMl parse HTML",
+        "slug": "解析html-parse-html",
+        "children": [
+          {
+            "level": 3,
+            "title": "为什么要将HTML字符串解析为树形结构",
+            "slug": "为什么要将html字符串解析为树形结构",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "解析HTML",
+            "slug": "解析html",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "解析HTMl时碰到css代码怎么办",
+            "slug": "解析html时碰到css代码怎么办",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "解析HTML时碰到js代码怎么办",
+            "slug": "解析html时碰到js代码怎么办",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "js访问css内部样式，外部样式，内联样式表",
+            "slug": "js访问css内部样式-外部样式-内联样式表",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "样式计算",
+        "slug": "样式计算",
+        "children": [
+          {
+            "level": 3,
+            "title": "属性计算过程",
+            "slug": "属性计算过程",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "布局 layout",
+        "slug": "布局-layout",
+        "children": [
+          {
+            "level": 3,
+            "title": "包含块",
+            "slug": "包含块",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "DOM树与layout树不是一一对应的",
+            "slug": "dom树与layout树不是一一对应的",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "浏览器默认样式",
+            "slug": "浏览器默认样式",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "分层 layer",
+        "slug": "分层-layer",
+        "children": [
+          {
+            "level": 3,
+            "title": "will-change",
+            "slug": "will-change",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "绘制 paint",
+        "slug": "绘制-paint",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "分块 Tiling",
+        "slug": "分块-tiling",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "光栅化 raster",
+        "slug": "光栅化-raster",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "画 draw",
+        "slug": "画-draw",
+        "children": [
+          {
+            "level": 3,
+            "title": "为什么合成线程不直接将结果交给硬件，而要先转交给浏览器GPU？",
+            "slug": "为什么合成线程不直接将结果交给硬件-而要先转交给浏览器gpu",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "什么是 reflow？",
+            "slug": "什么是-reflow",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "什么是 repaint？",
+            "slug": "什么是-repaint",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "为什么 transform 的效率高？",
+            "slug": "为什么-transform-的效率高",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/css/render.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "electron",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1 介绍",
+        "slug": "_1-介绍",
+        "children": []
+      }
+    ],
     "path": "/electron/electron.html",
     "pathLocale": "/",
     "extraFields": []
@@ -198,9 +408,203 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前言",
+    "title": "EventSource",
+    "headers": [
+      {
+        "level": 2,
+        "title": "简介",
+        "slug": "简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "使用场景",
+        "slug": "使用场景",
+        "children": [
+          {
+            "level": 3,
+            "title": "EventSource 优势",
+            "slug": "eventsource-优势",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "EventSource 劣势",
+            "slug": "eventsource-劣势",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "普通HTTP请求与EventSource请求对比",
+            "slug": "普通http请求与eventsource请求对比",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "EventSource 使用",
+        "slug": "eventsource-使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "服务端配置",
+            "slug": "服务端配置",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "客户端配置",
+            "slug": "客户端配置",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "chatgpt为什么选择eventSource",
+            "slug": "chatgpt为什么选择eventsource",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "总结",
+            "slug": "总结",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/http/eventSource.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "http",
     "headers": [],
+    "path": "/http/http.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "websocket",
+    "headers": [],
+    "path": "/http/websocket.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "git",
+    "headers": [
+      {
+        "level": 3,
+        "title": "hash",
+        "slug": "hash",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "git stash 暂存代码",
+        "slug": "git-stash-暂存代码",
+        "children": [
+          {
+            "level": 3,
+            "title": "暂存常用命令",
+            "slug": "暂存常用命令",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "git 生命周期钩子函数",
+        "slug": "git-生命周期钩子函数",
+        "children": [
+          {
+            "level": 3,
+            "title": "本地钩子",
+            "slug": "本地钩子",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "远程钩子",
+            "slug": "远程钩子",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "git cherry-pick 部分commit提交",
+        "slug": "git-cherry-pick-部分commit提交",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "git reset 回退版本",
+        "slug": "git-reset-回退版本",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "git revert 撤销中间某次commit提交",
+        "slug": "git-revert-撤销中间某次commit提交",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "git rebase 变基",
+        "slug": "git-rebase-变基",
+        "children": [
+          {
+            "level": 3,
+            "title": "多个commit合并",
+            "slug": "多个commit合并",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "git diff 查看commit更改",
+            "slug": "git-diff-查看commit更改",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "git 补丁",
+        "slug": "git-补丁",
+        "children": [
+          {
+            "level": 3,
+            "title": "有冲突解决方案",
+            "slug": "有冲突解决方案",
+            "children": []
+          }
+        ]
+      }
+    ],
     "path": "/git/git.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "husky",
+    "headers": [
+      {
+        "level": 2,
+        "title": "插件  eslint + prettier + husky",
+        "slug": "插件-eslint-prettier-husky",
+        "children": []
+      }
+    ],
+    "path": "/formatCode/husky.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "前端代理解决方案",
+    "headers": [],
+    "path": "/httpProxy/chromeProxy.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -257,6 +661,43 @@ export const searchIndex = [
   {
     "title": "事件循环机制（event loop）",
     "headers": [
+      {
+        "level": 2,
+        "title": "进程",
+        "slug": "进程",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "线程",
+        "slug": "线程",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "浏览器有那些进程与线程",
+        "slug": "浏览器有那些进程与线程",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "js同步/异步",
+        "slug": "js同步-异步",
+        "children": [
+          {
+            "level": 3,
+            "title": "异步",
+            "slug": "异步",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "事件循环解决的问题",
+        "slug": "事件循环解决的问题",
+        "children": []
+      },
       {
         "level": 2,
         "title": "js 内存机制",
@@ -330,6 +771,24 @@ export const searchIndex = [
         "level": 2,
         "title": "node 和浏览器 EventLoop 的主要区别",
         "slug": "node-和浏览器-eventloop-的主要区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "JS中的定时器能做到精确计时吗？为什么？",
+        "slug": "js中的定时器能做到精确计时吗-为什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "解释事件循环",
+        "slug": "解释事件循环",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "解释异步",
+        "slug": "解释异步",
         "children": []
       }
     ],
@@ -703,6 +1162,52 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "aj-report",
+    "headers": [
+      {
+        "level": 2,
+        "title": "aj-report  前端大屏拖拽生成",
+        "slug": "aj-report-前端大屏拖拽生成",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "项目本地运行展示",
+        "slug": "项目本地运行展示",
+        "children": []
+      }
+    ],
+    "path": "/openSource/aj-report.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "h5-dooring",
+    "headers": [
+      {
+        "level": 3,
+        "title": "介绍",
+        "slug": "介绍",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "项目环境",
+        "slug": "项目环境",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "运行页面",
+        "slug": "运行页面",
+        "children": []
+      }
+    ],
+    "path": "/openSource/h5-dooring.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "hooks",
     "headers": [
       {
@@ -992,8 +1497,145 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前言",
+    "title": "rust",
+    "headers": [
+      {
+        "level": 3,
+        "title": "解决rust启动报错 link.exe",
+        "slug": "解决rust启动报错-link-exe",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "离线文档",
+        "slug": "离线文档",
+        "children": []
+      },
+      {
+        "level": 3,
+        "title": "rustc 命令行参数及作用",
+        "slug": "rustc-命令行参数及作用",
+        "children": []
+      }
+    ],
+    "path": "/rust/rust.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "有用的网址",
     "headers": [],
+    "path": "/technicalUrl/url.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "threejs",
+    "headers": [
+      {
+        "level": 2,
+        "title": "WebGL是什么？",
+        "slug": "webgl是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "threejs是什么？",
+        "slug": "threejs是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "本地运行threejs官网项目",
+        "slug": "本地运行threejs官网项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "三维模型基础组成",
+        "slug": "三维模型基础组成",
+        "children": [
+          {
+            "level": 3,
+            "title": "第一个场景",
+            "slug": "第一个场景",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "场景 Scene",
+            "slug": "场景-scene",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "相机 Camera",
+            "slug": "相机-camera",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "渲染器 webglRenderer",
+            "slug": "渲染器-webglrenderer",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "几何体 bufferGeometry",
+            "slug": "几何体-buffergeometry",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "材质 Material",
+            "slug": "材质-material",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "光源 light",
+            "slug": "光源-light",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "加载器",
+            "slug": "加载器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "动画",
+            "slug": "动画",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "字体",
+            "slug": "字体",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "着色器",
+            "slug": "着色器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "status 状态检测器",
+            "slug": "status-状态检测器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "guis 外部操作按钮",
+            "slug": "guis-外部操作按钮",
+            "children": []
+          }
+        ]
+      }
+    ],
     "path": "/threejs/three.html",
     "pathLocale": "/",
     "extraFields": []
@@ -1074,6 +1716,13 @@ export const searchIndex = [
       }
     ],
     "path": "/vite/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "插件",
+    "headers": [],
+    "path": "/vscode/plugins.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1486,6 +2135,113 @@ export const searchIndex = [
       }
     ],
     "path": "/vue/vue3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "webWorker",
+    "headers": [
+      {
+        "level": 2,
+        "title": "产生的背景",
+        "slug": "产生的背景",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "webWorker简介",
+        "slug": "webworker简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "兼容性",
+        "slug": "兼容性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "webWorker使用",
+        "slug": "webworker使用",
+        "children": [
+          {
+            "level": 3,
+            "title": "创建",
+            "slug": "创建",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "通信",
+            "slug": "通信",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "监听错误",
+            "slug": "监听错误",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "关闭",
+            "slug": "关闭",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "worker引入其他文件",
+            "slug": "worker引入其他文件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ESModule 模式",
+            "slug": "esmodule-模式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "有了 Web Worker API，JavaScript 是否真的变成了一门多线程语言？",
+            "slug": "有了-web-worker-api-javascript-是否真的变成了一门多线程语言",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "SharedWorker",
+        "slug": "sharedworker",
+        "children": [
+          {
+            "level": 3,
+            "title": "sharedWorker调试",
+            "slug": "sharedworker调试",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "兼容性",
+            "slug": "兼容性-1",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "serviceWorker",
+        "slug": "serviceworker",
+        "children": []
+      }
+    ],
+    "path": "/webWorker/webWorker.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "正则",
+    "headers": [],
+    "path": "/zhengze/zhengze.html",
     "pathLocale": "/",
     "extraFields": []
   },

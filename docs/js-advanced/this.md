@@ -30,9 +30,6 @@ var b = new a(); // 报错  TypeError: a is not a constructor
 
 关于 this 的指向,始终坚持一个原理: this 永远指向`最后调用`它的那个对象
 
-关于 this 的指向,始终坚持一个原理: this 永远指向`最后调用`它的那个对象
-
-关于 this 的指向,始终坚持一个原理: this 永远指向`最后调用`它的那个对象
 
 例 1:
 
@@ -336,19 +333,19 @@ function myFn(arg1, arg2) {
   this.firstName = arg1;
   this.lastName = arg2;
 }
-var a = new myFn('徐', '海瑞');
-console.log(a.lastName); // 海瑞
+var a = new myFn('张', '三丰');
+console.log(a.lastName); // 三丰
 ```
 
 上面例子 new 的过程:
 
 ```js
 伪代码
-var a = new myFunction("徐","海瑞");
+var a = new myFunction("张","三丰");
 new myFunction{
     var obj = {};
     obj.__proto__ = myFunction.prototype;
-    var result = myFunction.call(obj,"徐","海瑞");
+    var result = myFunction.call(obj,"张","三丰");
     return typeof result === 'object'? result : obj;
 }
 ```

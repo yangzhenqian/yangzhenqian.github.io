@@ -8,6 +8,43 @@ export const data = {
   "headers": [
     {
       "level": 2,
+      "title": "进程",
+      "slug": "进程",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "线程",
+      "slug": "线程",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "浏览器有那些进程与线程",
+      "slug": "浏览器有那些进程与线程",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "js同步/异步",
+      "slug": "js同步-异步",
+      "children": [
+        {
+          "level": 3,
+          "title": "异步",
+          "slug": "异步",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "事件循环解决的问题",
+      "slug": "事件循环解决的问题",
+      "children": []
+    },
+    {
+      "level": 2,
       "title": "js 内存机制",
       "slug": "js-内存机制",
       "children": []
@@ -80,16 +117,34 @@ export const data = {
       "title": "node 和浏览器 EventLoop 的主要区别",
       "slug": "node-和浏览器-eventloop-的主要区别",
       "children": []
+    },
+    {
+      "level": 2,
+      "title": "JS中的定时器能做到精确计时吗？为什么？",
+      "slug": "js中的定时器能做到精确计时吗-为什么",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "解释事件循环",
+      "slug": "解释事件循环",
+      "children": []
+    },
+    {
+      "level": 2,
+      "title": "解释异步",
+      "slug": "解释异步",
+      "children": []
     }
   ],
   "filePathRelative": "js-advanced/事件循环.md",
   "git": {
-    "updatedTime": 1684392364000,
+    "updatedTime": 1709185669000,
     "contributors": [
       {
         "name": "yangzhenqian",
         "email": "zhenqian.yang@i-tage.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

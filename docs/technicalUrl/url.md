@@ -1,3 +1,10 @@
+<!--
+ * @Author: yangzhenqian
+ * @Date: 2024-05-17 17:16:39
+ * @LastEditors: yangzhenqian
+ * @LastEditTime: 2025-02-27 11:00:15
+ * @Description: 收集的url汇总
+-->
 # 有用的网址
 
 [微前端](https://zh-hans.single-spa.js.org/docs/migrating-existing-spas)
@@ -11,11 +18,17 @@
 [学习网站](https://devdocs.io/)
 
 [rust语言](http://rust.p2hp.com/learn/get-started)
-flv.js（B站开源）使用纯JavaScript而不使用Flash编写的HTML5 Flash视频（FLV）播放器。
-vue-video-player 适用于 Vue 的 video.js 播放器组件。
-chimee.js 组件化H5播放器框架，支持 mp4、m3u8、flv 等多种格式，由奇舞团视频云前端组研发。
-cyberplayer 百度官方推出的用于开发网页播放器的软件开发工具包。
-ksplayer KSPlayer是金山云的Web端视频播放器。
+
+[flv.js]（B站开源）使用纯JavaScript而不使用Flash编写的HTML5 Flash视频（FLV）播放器。
+
+[vue-video-player] 适用于 Vue 的 video.js 播放器组件。
+
+[chimee.js] 组件化H5播放器框架，支持 mp4、m3u8、flv 等多种格式，由奇舞团视频云前端组研发。
+
+[cyberplayer] 百度官方推出的用于开发网页播放器的软件开发工具包。
+
+[ksplayer] KSPlayer是金山云的Web端视频播放器。
+
 [vue-bag-admin 中后台框架](https://vite.itnavs.com/admin/#/home)
 
 [turn.js 仿翻书动画](http://www.turnjs.com/#samples/magazine2/9)
@@ -54,8 +67,12 @@ ksplayer KSPlayer是金山云的Web端视频播放器。
 
 [superset](https://github.com/apache/superset)
 
-[vue2-leaflet]
+[vue2-leaflet](https://leafletjs.com/)
 
 [浏览器事件循环](https://blog.csdn.net/weixin_42319157/article/details/130182859)
 
 [grok](https://github.com/xai-org/grok-1?tab=readme-ov-file)
+
+[su7 展示动画](https://gamemcu.com/su7/)
+
+[前端面经](https://www.yuque.com/cuggz/interview)

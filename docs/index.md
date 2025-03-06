@@ -4,7 +4,9 @@ home: true
 heroText: ""
 tagline: 'hello,welcome to my blog!'
 actions:
-  - text: 进入 →
+  - text: 文档 →
     link: /my/
+  - text: 玩乐 →
+    link: game#/
 footer: MIT Licensed | Copyright © 2021-present
 ---

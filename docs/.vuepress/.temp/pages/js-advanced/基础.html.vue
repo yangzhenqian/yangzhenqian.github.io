@@ -46,8 +46,10 @@
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>使用这种方法任何类型都能准确判断出来,需要理解下面三点:</p>
 <ul>
 <li>该方法本质就是依托<code>Object.prototype.toString()</code>方法得到对象内部属性 <code>[[Class]]</code></li>
+<li>所有数据类型都是对象的一种类型，而Object.prototype.toString可以返回当前调用者的对象类型。</li>
 <li>传入原始类型却能够判定出结果是因为对值进行了包装</li>
 <li><code>null</code> 和 <code>undefined</code> 能够输出结果是内部实现有做处理</li>
+<li><code>call()</code>是为了改变<code>Object.prototype.toString</code>这个函数都指向。让<code>Object.prototype.toString</code>这个方法指向我们所传入的数据。</li>
 </ul>
 <p>可以将上述方法,进行一个简单的封装:</p>
 <div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">judgeType</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
@@ -126,7 +128,7 @@ arr1 <span class="token operator">===</span> arr3<span class="token punctuation"
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ol start="4">
 <li>x 和 y 有一个是引用数据类型 , 会先获取引用数据类型的原始值</li>
 </ol>
-<p>引用数据类型的原始值: 先调用 valueOf(),接着调用 toString();</p>
+<p>引用数据类型的原始值: 先调用 Symbol.toPrimitive，再调用 valueOf(),接着调用 toString();</p>
 <p>valueOf(): 一般默认返回自身;</p>
 <p>数组的 toSting() : 默认会调用 join() 方法拼接成字符串;</p>
 <div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// [].valueOf().toString() == 1 => [].join() == 1 => '' == 1 => Number('') == 1 => 0 ==1 => false</span>

@@ -17,6 +17,12 @@ export const themeData = {
       ]
     },
     {
+      "text": "css高级",
+      "children": [
+        "/css/render.md"
+      ]
+    },
+    {
       "text": "js高级",
       "children": [
         "/js-advanced/基础.md",
@@ -87,6 +93,70 @@ export const themeData = {
       "text": "git",
       "children": [
         "/git/git.md"
+      ]
+    },
+    {
+      "text": "技术网址",
+      "children": [
+        "/technicalUrl/url.md"
+      ]
+    },
+    {
+      "text": "chrome",
+      "children": [
+        "/chrome/plugin.md",
+        "/chrome/chromePlugin.md"
+      ]
+    },
+    {
+      "text": "webWorker",
+      "children": [
+        "/webWorker/webWorker.md"
+      ]
+    },
+    {
+      "text": "通信",
+      "children": [
+        "/http/http.md",
+        "/http/websocket.md",
+        "/http/eventSource.md"
+      ]
+    },
+    {
+      "text": "正则",
+      "children": [
+        "/zhengze/zhengze.md"
+      ]
+    },
+    {
+      "text": "前端代理",
+      "children": [
+        "/httpProxy/chromeProxy.md"
+      ]
+    },
+    {
+      "text": "格式化代码",
+      "children": [
+        "/formatCode/husky.md"
+      ]
+    },
+    {
+      "text": "rust",
+      "children": [
+        "/rust/rust.md"
+      ]
+    },
+    {
+      "text": "开源组态库",
+      "children": [
+        "/openSource/aj-report.md",
+        "/openSource/h5-dooring.md"
+      ]
+    },
+    {
+      "text": "vscode",
+      "children": [
+        "/vscode/plugins.md"
       ]
     }
   ],
