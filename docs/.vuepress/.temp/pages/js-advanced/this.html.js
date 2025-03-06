@@ -51,8 +51,13 @@ export const data = {
   ],
   "filePathRelative": "js-advanced/this.md",
   "git": {
-    "updatedTime": 1684392364000,
+    "updatedTime": 1741244135000,
     "contributors": [
+      {
+        "name": "yangzhenqian",
+        "email": "1391795844@qq.com",
+        "commits": 1
+      },
       {
         "name": "yangzhenqian",
         "email": "zhenqian.yang@i-tage.com",

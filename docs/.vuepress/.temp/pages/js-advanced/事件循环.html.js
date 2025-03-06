@@ -139,12 +139,17 @@ export const data = {
   ],
   "filePathRelative": "js-advanced/事件循环.md",
   "git": {
-    "updatedTime": 1709185669000,
+    "updatedTime": 1741244135000,
     "contributors": [
       {
         "name": "yangzhenqian",
         "email": "zhenqian.yang@i-tage.com",
         "commits": 2
+      },
+      {
+        "name": "yangzhenqian",
+        "email": "1391795844@qq.com",
+        "commits": 1
       }
     ]
   }
